@@ -28,7 +28,7 @@ export const styles = StyleSheet.create({
     color:'#E5DF3C',
     padding: 10,
     borderRadius: 5,
-    margin: 2,
+    margin: 3,
   },
   cards:{
     flexDirection:'column',
@@ -39,5 +39,6 @@ export const styles = StyleSheet.create({
     padding: 20,
     paddingTop: 10,
     borderRadius: 7,
+    margin: 7,
   }
 });

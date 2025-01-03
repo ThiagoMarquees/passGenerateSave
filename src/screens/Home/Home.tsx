@@ -1,6 +1,5 @@
 import React from "react";
-import { StatusBar } from 'expo-status-bar';
-import { View } from 'react-native';
+import { View, ScrollView } from 'react-native';
 import styles from './Styles'
 import { BatLogo } from "../../components/BatLogo/BatLogo";
 import { BatButton } from "../../components/BatButton/BatButton";
@@ -9,6 +8,7 @@ import { SaveButton } from "../../components/SaveButton/SaveButton";
 export default function Home(){
   return (
     <>
+    <ScrollView style={{flex: 1, backgroundColor: '#333333'}}>
      <View style={styles.appContainer}>
         <View style={styles.logoContainer}>
           <BatLogo/>
@@ -17,8 +17,8 @@ export default function Home(){
           <BatButton/>
           <SaveButton/>
         </View>
-          <StatusBar style="light" />
      </View>
+    </ScrollView>
     </>
   )
 }

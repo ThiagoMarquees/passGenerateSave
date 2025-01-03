@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Pressable, ScrollView, Text, TextInput, View } from 'react-native';
+import { Pressable, Text, TextInput, View } from 'react-native';
 
 import { styles } from './SaveButtonStyle';
 
@@ -22,7 +22,6 @@ export function SaveButton() {
   }
 
   return (
-    <ScrollView>
     <View style = {styles.container}>
       <Text style = {styles.texto}>Salve para não esquecer</Text>
       <TextInput style = {styles.inputs} placeholder='Conta' placeholderTextColor={'#E5DF3C'} onChangeText={(text) => setUsuario(text)} ></TextInput>
@@ -44,7 +43,6 @@ export function SaveButton() {
       ))}
     </View>
     </View>
-    </ScrollView>
 
   );
 }
